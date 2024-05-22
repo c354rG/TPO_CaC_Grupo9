@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF -8" />
+  <title>Desarrollo y Soporte</title>
+  <link rel="shortcut icon" href="/assets/icon/cont.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+
+<body>
+  <div class="container-nav">
+    <nav class="navbar">
+      <a href="../index.html" class="brand">La Web de los Devs</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="/templates/about.html">Nosotros</a></li>
+        <li><a href="/templates/services.html">Servicios</a></li>
+        <li><a href="/templates/contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="button-menu-toggle">Menu</button>
+  </div>
+  <div class="container">
+    <h1>¡Contáctanos!</h1>
+
+    <form id="formulario-contacto">
+      <div class="campo">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="campo">
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto" required>
+          <option value="">Selecciona una opción</option>
+          <option value="consulta">Consulta general</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="reclamo">Reclamo</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+      </div>
+
+      <div class="campo">
+        <label for="imagen">Adjuntar imagen:</label>
+        <input type="file" id="imagen" name="imagen">
+      </div>
+
+      <div class="campo">
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+      </div>
+
+      <button type="submit">Enviar formulario</button>
+
+      <script src="/static/forms.js"></script>
+      <script src="/static/script.js"></script>
+
+      <footer class="footer">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/tuPerfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/tuPerfil" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/tuPerfil" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/tuPerfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <button onclick="showAlert()" aria-label="Haz clic en mí">
+          ¡Haz clic en mí!
+        </button>
+
+      </footer>
+
+</body>
+
+</html>
